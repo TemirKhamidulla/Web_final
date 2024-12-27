@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="Qazaq Republic Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                </ul>
+                <div class="cart-link">
+                    <a href="cart.html">Корзина</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-tags">
+        <a href="#">Доставка</a>
+        <a href="#">Размеры</a>
+        <a href="#">Вопросы</a>
+        <a href="#">Акции</a>
+        <a href="#">Регистрация</a>
+        <a href="#">Контакты</a>
+        <a href="#">Служба поддержки</a>
+    </nav>
+
+    <main class="faq-section">
+        <div class="faq-description">
+            Любому размеру соответствует определённые параметры тела, которые нужно правильно измерить. Рост измеряется от самой верхней точки вашей головы до пола.
+
+            Обхват груди у мужчин ­­­– по наиболее выступающим точкам груди, затем под подмышечными впадинами. Обхват талии у мужчин — область по линии талии в районе пупка. Обхват бедер  у мужчин — по наиболее выступающим точкам ягодиц.
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Ожидается ли поступление товара и в какие сроки?</div>
+            <div class="faq-answer">
+                Да, мы регулярно обновляем наш ассортимент. Сроки поставки зависят от партнёров и могут занимать от 2 до 7 дней.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как зарегистрироваться?</div>
+            <div class="faq-answer">
+                Для регистрации перейдите на страницу регистрации, заполните форму с вашими данными и подтвердите вашу электронную почту.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как изменить способ доставки?</div>
+            <div class="faq-answer">
+                Вы можете изменить способ доставки в вашем личном кабинете или связаться с нашей службой поддержки.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как вернуть товар, который не подошёл?</div>
+            <div class="faq-answer">
+                Для возврата товара свяжитесь с нашей службой поддержки, заполните форму возврата и отправьте товар обратно.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Как вернуть товар по причине брака или несоответствия?</div>
+            <div class="faq-answer">
+                При обнаружении брака или несоответствия свяжитесь с нашей службой поддержки в течение 14 дней с момента получения товара.
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach((question) => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('open');
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('open');
+            });
+        });
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© Qazaq Republic. Все права защищены.</p>
+            <ul class="footer-links">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Новости</a></li>
+            </ul>
+            <div class="socials">
+                <a href="#">VK</a> | <a href="#">Instagram</a> | <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
